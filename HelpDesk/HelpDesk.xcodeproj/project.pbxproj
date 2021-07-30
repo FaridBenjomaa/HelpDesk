@@ -101,14 +101,14 @@
 		E604FF7026B43CF800072D66 /* HelpDesk */ = {
 			isa = PBXGroup;
 			children = (
+				E604FFA426B43E2700072D66 /* Model */,
+				E604FFA626B43E3A00072D66 /* Controleur */,
+				E604FFA526B43E3300072D66 /* Vue */,
 				E604FF7126B43CF800072D66 /* AppDelegate.swift */,
 				E604FF7326B43CF800072D66 /* SceneDelegate.swift */,
-				E604FF7526B43CF800072D66 /* ViewController.swift */,
-				E604FF7726B43CF800072D66 /* Main.storyboard */,
 				E604FF7D26B43CF800072D66 /* Assets.xcassets */,
 				E604FF7F26B43CF800072D66 /* LaunchScreen.storyboard */,
 				E604FF8226B43CF800072D66 /* Info.plist */,
-				E604FF7A26B43CF800072D66 /* HelpDesk.xcdatamodeld */,
 			);
 			path = HelpDesk;
 			sourceTree = "<group>";
@@ -129,6 +129,30 @@
 				E604FF9826B43CF800072D66 /* Info.plist */,
 			);
 			path = HelpDeskUITests;
+			sourceTree = "<group>";
+		};
+		E604FFA426B43E2700072D66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E604FF7A26B43CF800072D66 /* HelpDesk.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E604FFA526B43E3300072D66 /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+				E604FF7726B43CF800072D66 /* Main.storyboard */,
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		E604FFA626B43E3A00072D66 /* Controleur */ = {
+			isa = PBXGroup;
+			children = (
+				E604FF7526B43CF800072D66 /* ViewController.swift */,
+			);
+			path = Controleur;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
