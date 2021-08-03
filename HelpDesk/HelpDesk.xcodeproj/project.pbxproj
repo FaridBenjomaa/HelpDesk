@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C270D576EFE03969E3E3457 /* Pods_HelpDeskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906C5823D76F9590A61348A2 /* Pods_HelpDeskTests.framework */; };
+		85159B432180D9CD57D777F4 /* Pods_HelpDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2012D26DB80D22B7183A208B /* Pods_HelpDesk.framework */; };
+		913D8AA56E7DCC93622A4C8A /* Pods_HelpDesk_HelpDeskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62EF480612BFED74CF3ADAB /* Pods_HelpDesk_HelpDeskUITests.framework */; };
 		E604FF7226B43CF800072D66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604FF7126B43CF800072D66 /* AppDelegate.swift */; };
 		E604FF7426B43CF800072D66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604FF7326B43CF800072D66 /* SceneDelegate.swift */; };
-		E604FF7626B43CF800072D66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604FF7526B43CF800072D66 /* ViewController.swift */; };
 		E604FF7926B43CF800072D66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E604FF7726B43CF800072D66 /* Main.storyboard */; };
-		E604FF7C26B43CF800072D66 /* HelpDesk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E604FF7A26B43CF800072D66 /* HelpDesk.xcdatamodeld */; };
 		E604FF7E26B43CF800072D66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E604FF7D26B43CF800072D66 /* Assets.xcassets */; };
 		E604FF8126B43CF800072D66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E604FF7F26B43CF800072D66 /* LaunchScreen.storyboard */; };
 		E604FF8C26B43CF800072D66 /* HelpDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604FF8B26B43CF800072D66 /* HelpDeskTests.swift */; };
 		E604FF9726B43CF800072D66 /* HelpDeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604FF9626B43CF800072D66 /* HelpDeskUITests.swift */; };
+		E604FFA826B483E600072D66 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604FFA726B483E600072D66 /* LoginPageViewController.swift */; };
+		E67C7BBB26B8429200274140 /* UserListLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C7BBA26B8429200274140 /* UserListLineCell.swift */; };
+		E699C11526B82061006EA1AD /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11426B82061006EA1AD /* AdminHomeViewController.swift */; };
+		E699C11726B83A18006EA1AD /* ButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11626B83A18006EA1AD /* ButtonConfig.swift */; };
+		E699C11926B83B81006EA1AD /* AddUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11826B83B81006EA1AD /* AddUserListViewController.swift */; };
+		E6CE4BD926B5DD04007EBA0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6CE4BD826B5DD04007EBA0E /* GoogleService-Info.plist */; };
+		E6EB6B4226B58E9B00B46819 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB6B4126B58E9B00B46819 /* User.swift */; };
+		E6EB6B4826B5914300B46819 /* TechHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB6B4726B5914300B46819 /* TechHomePageViewController.swift */; };
+		E6EB6B4A26B5915C00B46819 /* EmployerHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB6B4926B5915C00B46819 /* EmployerHomePageViewController.swift */; };
+		E6EB6B4C26B5A00600B46819 /* AddUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB6B4B26B5A00600B46819 /* AddUsersViewController.swift */; };
+		E6F281D126B5B208003C2610 /* Roles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F281D026B5B208003C2610 /* Roles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2012D26DB80D22B7183A208B /* Pods_HelpDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F0E8044E1DDB4D12C5AD45 /* Pods-HelpDesk-HelpDeskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpDesk-HelpDeskUITests.debug.xcconfig"; path = "Target Support Files/Pods-HelpDesk-HelpDeskUITests/Pods-HelpDesk-HelpDeskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		549138C516F7103EC812515C /* Pods-HelpDeskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpDeskTests.release.xcconfig"; path = "Target Support Files/Pods-HelpDeskTests/Pods-HelpDeskTests.release.xcconfig"; sourceTree = "<group>"; };
+		679F6F40B09D2992D90293DE /* Pods-HelpDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpDesk.debug.xcconfig"; path = "Target Support Files/Pods-HelpDesk/Pods-HelpDesk.debug.xcconfig"; sourceTree = "<group>"; };
+		906C5823D76F9590A61348A2 /* Pods_HelpDeskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpDeskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		951560741F53A77655CB7A01 /* Pods-HelpDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpDesk.release.xcconfig"; path = "Target Support Files/Pods-HelpDesk/Pods-HelpDesk.release.xcconfig"; sourceTree = "<group>"; };
+		E57896D11C5946FCBE3E50EB /* Pods-HelpDeskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpDeskTests.debug.xcconfig"; path = "Target Support Files/Pods-HelpDeskTests/Pods-HelpDeskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E604FF6E26B43CF800072D66 /* HelpDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E604FF7126B43CF800072D66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E604FF7326B43CF800072D66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E604FF7526B43CF800072D66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E604FF7826B43CF800072D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E604FF7B26B43CF800072D66 /* HelpDesk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelpDesk.xcdatamodel; sourceTree = "<group>"; };
 		E604FF7D26B43CF800072D66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E604FF8026B43CF800072D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E604FF8226B43CF800072D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +68,19 @@
 		E604FF9226B43CF800072D66 /* HelpDeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpDeskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E604FF9626B43CF800072D66 /* HelpDeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDeskUITests.swift; sourceTree = "<group>"; };
 		E604FF9826B43CF800072D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E604FFA726B483E600072D66 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		E62EF480612BFED74CF3ADAB /* Pods_HelpDesk_HelpDeskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpDesk_HelpDeskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67C7BBA26B8429200274140 /* UserListLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListLineCell.swift; sourceTree = "<group>"; };
+		E699C11426B82061006EA1AD /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		E699C11626B83A18006EA1AD /* ButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfig.swift; sourceTree = "<group>"; };
+		E699C11826B83B81006EA1AD /* AddUserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserListViewController.swift; sourceTree = "<group>"; };
+		E6CE4BD826B5DD04007EBA0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6EB6B4126B58E9B00B46819 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; tabWidth = 1; };
+		E6EB6B4726B5914300B46819 /* TechHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechHomePageViewController.swift; sourceTree = "<group>"; };
+		E6EB6B4926B5915C00B46819 /* EmployerHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerHomePageViewController.swift; sourceTree = "<group>"; };
+		E6EB6B4B26B5A00600B46819 /* AddUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUsersViewController.swift; sourceTree = "<group>"; };
+		E6F281D026B5B208003C2610 /* Roles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roles.swift; sourceTree = "<group>"; };
+		F92C798CDF05A1EAF7C09C92 /* Pods-HelpDesk-HelpDeskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpDesk-HelpDeskUITests.release.xcconfig"; path = "Target Support Files/Pods-HelpDesk-HelpDeskUITests/Pods-HelpDesk-HelpDeskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85159B432180D9CD57D777F4 /* Pods_HelpDesk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C270D576EFE03969E3E3457 /* Pods_HelpDeskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				913D8AA56E7DCC93622A4C8A /* Pods_HelpDesk_HelpDeskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2F0E698AD3B2BECD190F09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				679F6F40B09D2992D90293DE /* Pods-HelpDesk.debug.xcconfig */,
+				951560741F53A77655CB7A01 /* Pods-HelpDesk.release.xcconfig */,
+				30F0E8044E1DDB4D12C5AD45 /* Pods-HelpDesk-HelpDeskUITests.debug.xcconfig */,
+				F92C798CDF05A1EAF7C09C92 /* Pods-HelpDesk-HelpDeskUITests.release.xcconfig */,
+				E57896D11C5946FCBE3E50EB /* Pods-HelpDeskTests.debug.xcconfig */,
+				549138C516F7103EC812515C /* Pods-HelpDeskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9C54BD256789A7168EF9D19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2012D26DB80D22B7183A208B /* Pods_HelpDesk.framework */,
+				E62EF480612BFED74CF3ADAB /* Pods_HelpDesk_HelpDeskUITests.framework */,
+				906C5823D76F9590A61348A2 /* Pods_HelpDeskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E604FF6526B43CF800072D66 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +141,8 @@
 				E604FF8A26B43CF800072D66 /* HelpDeskTests */,
 				E604FF9526B43CF800072D66 /* HelpDeskUITests */,
 				E604FF6F26B43CF800072D66 /* Products */,
+				9F2F0E698AD3B2BECD190F09 /* Pods */,
+				A9C54BD256789A7168EF9D19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +167,7 @@
 				E604FF7D26B43CF800072D66 /* Assets.xcassets */,
 				E604FF7F26B43CF800072D66 /* LaunchScreen.storyboard */,
 				E604FF8226B43CF800072D66 /* Info.plist */,
+				E6CE4BD826B5DD04007EBA0E /* GoogleService-Info.plist */,
 			);
 			path = HelpDesk;
 			sourceTree = "<group>";
@@ -134,7 +193,9 @@
 		E604FFA426B43E2700072D66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E604FF7A26B43CF800072D66 /* HelpDesk.xcdatamodeld */,
+				E6EB6B4126B58E9B00B46819 /* User.swift */,
+				E6F281D026B5B208003C2610 /* Roles.swift */,
+				E699C11626B83A18006EA1AD /* ButtonConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +203,7 @@
 		E604FFA526B43E3300072D66 /* Vue */ = {
 			isa = PBXGroup;
 			children = (
+				E699C11A26B84205006EA1AD /* TableView */,
 				E604FF7726B43CF800072D66 /* Main.storyboard */,
 			);
 			path = Vue;
@@ -150,9 +212,46 @@
 		E604FFA626B43E3A00072D66 /* Controleur */ = {
 			isa = PBXGroup;
 			children = (
-				E604FF7526B43CF800072D66 /* ViewController.swift */,
+				E699C11326B8200B006EA1AD /* Utilisateur */,
+				E699C11226B82002006EA1AD /* Administrateur */,
+				E699C11126B81FF7006EA1AD /* Technicien */,
+				E604FFA726B483E600072D66 /* LoginPageViewController.swift */,
 			);
 			path = Controleur;
+			sourceTree = "<group>";
+		};
+		E699C11126B81FF7006EA1AD /* Technicien */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB6B4726B5914300B46819 /* TechHomePageViewController.swift */,
+			);
+			path = Technicien;
+			sourceTree = "<group>";
+		};
+		E699C11226B82002006EA1AD /* Administrateur */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB6B4B26B5A00600B46819 /* AddUsersViewController.swift */,
+				E699C11426B82061006EA1AD /* AdminHomeViewController.swift */,
+				E699C11826B83B81006EA1AD /* AddUserListViewController.swift */,
+			);
+			path = Administrateur;
+			sourceTree = "<group>";
+		};
+		E699C11326B8200B006EA1AD /* Utilisateur */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB6B4926B5915C00B46819 /* EmployerHomePageViewController.swift */,
+			);
+			path = Utilisateur;
+			sourceTree = "<group>";
+		};
+		E699C11A26B84205006EA1AD /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E67C7BBA26B8429200274140 /* UserListLineCell.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E604FF9B26B43CF800072D66 /* Build configuration list for PBXNativeTarget "HelpDesk" */;
 			buildPhases = (
+				A94A62EF7B7BEC37B850D639 /* [CP] Check Pods Manifest.lock */,
 				E604FF6A26B43CF800072D66 /* Sources */,
 				E604FF6B26B43CF800072D66 /* Frameworks */,
 				E604FF6C26B43CF800072D66 /* Resources */,
+				3B40C09B295D1DF69EDFC406 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E604FF9E26B43CF800072D66 /* Build configuration list for PBXNativeTarget "HelpDeskTests" */;
 			buildPhases = (
+				7E0FDE95CDE6835B09B1201E /* [CP] Check Pods Manifest.lock */,
 				E604FF8326B43CF800072D66 /* Sources */,
 				E604FF8426B43CF800072D66 /* Frameworks */,
 				E604FF8526B43CF800072D66 /* Resources */,
@@ -197,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E604FFA126B43CF800072D66 /* Build configuration list for PBXNativeTarget "HelpDeskUITests" */;
 			buildPhases = (
+				B7397B9DC4DF1180FE84A130 /* [CP] Check Pods Manifest.lock */,
 				E604FF8E26B43CF800072D66 /* Sources */,
 				E604FF8F26B43CF800072D66 /* Frameworks */,
 				E604FF9026B43CF800072D66 /* Resources */,
+				4B6211693C492D5B5A593BF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E604FF8126B43CF800072D66 /* LaunchScreen.storyboard in Resources */,
+				E6CE4BD926B5DD04007EBA0E /* GoogleService-Info.plist in Resources */,
 				E604FF7E26B43CF800072D66 /* Assets.xcassets in Resources */,
 				E604FF7926B43CF800072D66 /* Main.storyboard in Resources */,
 			);
@@ -280,15 +385,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B40C09B295D1DF69EDFC406 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelpDesk/Pods-HelpDesk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelpDesk/Pods-HelpDesk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelpDesk/Pods-HelpDesk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B6211693C492D5B5A593BF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelpDesk-HelpDeskUITests/Pods-HelpDesk-HelpDeskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelpDesk-HelpDeskUITests/Pods-HelpDesk-HelpDeskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelpDesk-HelpDeskUITests/Pods-HelpDesk-HelpDeskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E0FDE95CDE6835B09B1201E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelpDeskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A94A62EF7B7BEC37B850D639 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelpDesk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7397B9DC4DF1180FE84A130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelpDesk-HelpDeskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E604FF6A26B43CF800072D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E604FF7626B43CF800072D66 /* ViewController.swift in Sources */,
-				E604FF7C26B43CF800072D66 /* HelpDesk.xcdatamodeld in Sources */,
+				E6EB6B4826B5914300B46819 /* TechHomePageViewController.swift in Sources */,
 				E604FF7226B43CF800072D66 /* AppDelegate.swift in Sources */,
+				E6EB6B4226B58E9B00B46819 /* User.swift in Sources */,
+				E699C11926B83B81006EA1AD /* AddUserListViewController.swift in Sources */,
+				E6EB6B4A26B5915C00B46819 /* EmployerHomePageViewController.swift in Sources */,
+				E6F281D126B5B208003C2610 /* Roles.swift in Sources */,
+				E604FFA826B483E600072D66 /* LoginPageViewController.swift in Sources */,
+				E699C11526B82061006EA1AD /* AdminHomeViewController.swift in Sources */,
+				E67C7BBB26B8429200274140 /* UserListLineCell.swift in Sources */,
 				E604FF7426B43CF800072D66 /* SceneDelegate.swift in Sources */,
+				E6EB6B4C26B5A00600B46819 /* AddUsersViewController.swift in Sources */,
+				E699C11726B83A18006EA1AD /* ButtonConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +677,7 @@
 		};
 		E604FF9C26B43CF800072D66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 679F6F40B09D2992D90293DE /* Pods-HelpDesk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -480,6 +697,7 @@
 		};
 		E604FF9D26B43CF800072D66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 951560741F53A77655CB7A01 /* Pods-HelpDesk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -499,6 +717,7 @@
 		};
 		E604FF9F26B43CF800072D66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57896D11C5946FCBE3E50EB /* Pods-HelpDeskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -521,6 +740,7 @@
 		};
 		E604FFA026B43CF800072D66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549138C516F7103EC812515C /* Pods-HelpDeskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +763,7 @@
 		};
 		E604FFA226B43CF800072D66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F0E8044E1DDB4D12C5AD45 /* Pods-HelpDesk-HelpDeskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +784,7 @@
 		};
 		E604FFA326B43CF800072D66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92C798CDF05A1EAF7C09C92 /* Pods-HelpDesk-HelpDeskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,19 +843,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E604FF7A26B43CF800072D66 /* HelpDesk.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E604FF7B26B43CF800072D66 /* HelpDesk.xcdatamodel */,
-			);
-			currentVersion = E604FF7B26B43CF800072D66 /* HelpDesk.xcdatamodel */;
-			path = HelpDesk.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E604FF6626B43CF800072D66 /* Project object */;
 }
