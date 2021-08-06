@@ -20,8 +20,8 @@ class  User  {
     var ref = Database.database(url: "https://helpdeskapp-ba9e6-default-rtdb.europe-west1.firebasedatabase.app").reference()
     let database = Firestore.firestore()
     
-    var userList : [String] = []
-    var userdetail : [String] = []
+    var userdetail :  [ String : Any ] = [ : ]
+    var usersList : [String:[String : Any ]]!
     
     init(){
 
@@ -70,6 +70,9 @@ class  User  {
             if let document = document, document.exists {
                 let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                 print("Document data: \(dataDescription)")
+                self.userdetail = document.data()!
+                let username =  self.userdetail["UserName"]
+                self.usersList[username as! String] = self.userdetail
             } else {
                 print("Document does not exist")
             }

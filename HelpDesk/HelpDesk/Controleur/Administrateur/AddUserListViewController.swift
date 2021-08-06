@@ -13,44 +13,59 @@ class AddUserListViewController: UIViewController {
     //MARK: Properties
     var button = ButtonConfig()
     let db = Firestore.firestore()
-    var user : [ String : Any ] = [ : ]
+  
+    private var service: UserService?
+       private var allusers = [appUser]() {
+           didSet {
+               DispatchQueue.main.async {
+                   self.users = self.allusers
+               }
+           }
+       }
+    
+    var users = [appUser]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+
+    
     //MARK: Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
     
     @IBOutlet weak var addUserButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         button.setUpWhiteButtons(button: addUserButton)
-        
-        let docRef = db.collection("Users").document("Admin.Admin")
+        loadData()
 
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                print("Document data: \(dataDescription)")
-                self.user = document.data()!
-                print(self.user["firstName"]!)
-                
-                
-            } else {
-                print("Document does not exist")
+    }
+    
+    //MARK: Fonctions
+    func loadData() {
+            service = UserService()
+            service?.get(collectionID: "User") { users in
+                self.allusers = users
             }
         }
-        
-    }
- 
  
 }
+ 
 
 
-extension AddUsersViewController: UITableViewDataSource{
+
+extension AddUserListViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,12 +73,15 @@ extension AddUsersViewController: UITableViewDataSource{
                 UserListLineCell else {
             return UITableViewCell()
         }
-        
+    
+        let firstName = users[indexPath.row].firstName
+        let lastName = users[indexPath.row].lastName
+        let role = users[indexPath.row].role
+
+        cell.configure(prenom: firstName!, nom: lastName!, role: role!)
    
         return cell
     }
 }
 
-extension AddUsersViewController: UITableViewDelegate {
 
-}

@@ -9,6 +9,12 @@ import UIKit
 
 class UserListLineCell: UITableViewCell {
 
+    //MARK: Outlets
+    @IBOutlet weak var prenomLabel: UILabel!
+    @IBOutlet weak var nomLabel: UILabel!
+    @IBOutlet weak var roleLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +26,12 @@ class UserListLineCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    //MARK: Private Functions
+    func configure(prenom: String, nom: String, role: String){
+    
+        prenomLabel.text = prenom
+        nomLabel.text = nom
+        roleLabel.text = role
+    }
+    
 }
