@@ -75,6 +75,8 @@ class TechHomePageViewController: UIViewController {
     
     //MARK: actions
     @IBAction func logoutButtonTapped(_ sender: Any) {
+        try? Auth.auth().signOut()
+         dismiss(animated: true, completion: nil)
         button.logout()
     }
     

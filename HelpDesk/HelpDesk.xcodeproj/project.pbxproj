@@ -21,6 +21,10 @@
 		E61BA3D126BD9B1D002585FC /* utilisateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3D026BD9B1D002585FC /* utilisateur.swift */; };
 		E61BA3D326BD9B5F002585FC /* userFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3D226BD9B5F002585FC /* userFirebase.swift */; };
 		E61BA3D526BD9CE5002585FC /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3D426BD9CE4002585FC /* UserService.swift */; };
+		E61BA3D726BE866E002585FC /* AddCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3D626BE866E002585FC /* AddCategoriesViewController.swift */; };
+		E61BA3D926BE8880002585FC /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3D826BE8880002585FC /* Categorie.swift */; };
+		E61BA3DB26BE9CDB002585FC /* AddAdresseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3DA26BE9CDA002585FC /* AddAdresseViewController.swift */; };
+		E61BA3DD26BEA1F7002585FC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3DC26BEA1F7002585FC /* Address.swift */; };
 		E67C7BBB26B8429200274140 /* UserListLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C7BBA26B8429200274140 /* UserListLineCell.swift */; };
 		E699C11526B82061006EA1AD /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11426B82061006EA1AD /* AdminHomeViewController.swift */; };
 		E699C11726B83A18006EA1AD /* ButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11626B83A18006EA1AD /* ButtonConfig.swift */; };
@@ -75,6 +79,10 @@
 		E61BA3D026BD9B1D002585FC /* utilisateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilisateur.swift; sourceTree = "<group>"; };
 		E61BA3D226BD9B5F002585FC /* userFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userFirebase.swift; sourceTree = "<group>"; };
 		E61BA3D426BD9CE4002585FC /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E61BA3D626BE866E002585FC /* AddCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoriesViewController.swift; sourceTree = "<group>"; };
+		E61BA3D826BE8880002585FC /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
+		E61BA3DA26BE9CDA002585FC /* AddAdresseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdresseViewController.swift; sourceTree = "<group>"; };
+		E61BA3DC26BEA1F7002585FC /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		E62EF480612BFED74CF3ADAB /* Pods_HelpDesk_HelpDeskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpDesk_HelpDeskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67C7BBA26B8429200274140 /* UserListLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListLineCell.swift; sourceTree = "<group>"; };
 		E699C11426B82061006EA1AD /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
@@ -199,10 +207,12 @@
 		E604FFA426B43E2700072D66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E61BA3CF26BD9B04002585FC /* Utilisateur */,
 				E6EB6B4126B58E9B00B46819 /* User.swift */,
+				E61BA3CF26BD9B04002585FC /* Utilisateur */,
 				E6F281D026B5B208003C2610 /* Roles.swift */,
 				E699C11626B83A18006EA1AD /* ButtonConfig.swift */,
+				E61BA3D826BE8880002585FC /* Categorie.swift */,
+				E61BA3DC26BEA1F7002585FC /* Address.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +261,8 @@
 				E6EB6B4B26B5A00600B46819 /* AddUsersViewController.swift */,
 				E699C11426B82061006EA1AD /* AdminHomeViewController.swift */,
 				E699C11826B83B81006EA1AD /* AddUserListViewController.swift */,
+				E61BA3D626BE866E002585FC /* AddCategoriesViewController.swift */,
+				E61BA3DA26BE9CDA002585FC /* AddAdresseViewController.swift */,
 			);
 			path = Administrateur;
 			sourceTree = "<group>";
@@ -512,8 +524,10 @@
 			files = (
 				E6EB6B4826B5914300B46819 /* TechHomePageViewController.swift in Sources */,
 				E604FF7226B43CF800072D66 /* AppDelegate.swift in Sources */,
+				E61BA3D926BE8880002585FC /* Categorie.swift in Sources */,
 				E6EB6B4226B58E9B00B46819 /* User.swift in Sources */,
 				E61BA3D326BD9B5F002585FC /* userFirebase.swift in Sources */,
+				E61BA3DD26BEA1F7002585FC /* Address.swift in Sources */,
 				E699C11926B83B81006EA1AD /* AddUserListViewController.swift in Sources */,
 				E6EB6B4A26B5915C00B46819 /* EmployerHomePageViewController.swift in Sources */,
 				E61BA3D126BD9B1D002585FC /* utilisateur.swift in Sources */,
@@ -524,6 +538,8 @@
 				E61BA3D526BD9CE5002585FC /* UserService.swift in Sources */,
 				E604FF7426B43CF800072D66 /* SceneDelegate.swift in Sources */,
 				E6EB6B4C26B5A00600B46819 /* AddUsersViewController.swift in Sources */,
+				E61BA3D726BE866E002585FC /* AddCategoriesViewController.swift in Sources */,
+				E61BA3DB26BE9CDB002585FC /* AddAdresseViewController.swift in Sources */,
 				E699C11726B83A18006EA1AD /* ButtonConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

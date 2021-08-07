@@ -23,6 +23,7 @@ class ButtonConfig : UIViewController {
     
     func logout(){
         try? Auth.auth().signOut()
-        dismiss(animated: true, completion: nil)
+         dismiss(animated: true, completion: nil)
     }
 }
+

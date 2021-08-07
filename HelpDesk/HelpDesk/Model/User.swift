@@ -52,32 +52,9 @@ class  User  {
         docRef.setData(["UserName": username, "firstName": firstName, "lastName": lastName, "email": email, "role": role, "userId": userid])
     }
     
-    func getUser(userid: String) {
-        ref.child("Users").child(userid).observeSingleEvent(of: .value) { (snapshot) in
-            let value = snapshot.value as? NSDictionary
-            let firstName = value?["firstName"] as? String ?? ""
-            let lastName = value?["lastName"] as? String ?? ""
-            
-            self.firstName = firstName
-            self.lastName = lastName
-        }
-    }
-    
-    func getUserToDatabase(username: String){
-        let docRef = database.collection("Users").document("\(username)")
 
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                print("Document data: \(dataDescription)")
-                self.userdetail = document.data()!
-                let username =  self.userdetail["UserName"]
-                self.usersList[username as! String] = self.userdetail
-            } else {
-                print("Document does not exist")
-            }
-        }
-    }
+    
+
     
 }
 

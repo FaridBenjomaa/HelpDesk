@@ -6,8 +6,7 @@
 //
 
 import Foundation
-import Firebase
-import FirebaseDatabase
+import FirebaseFirestore
 
 class Roles {
   
@@ -17,5 +16,14 @@ class Roles {
         "Technicien",
         "Utilisateur"
     ]
+    
+    var name : String!
+    let database = Firestore.firestore()
+    
+    func createRole(name : String) {
+        let docRef = database.document("Role/\(name)")
+        
+        docRef.setData(["name": name])
+    }
     
 }
