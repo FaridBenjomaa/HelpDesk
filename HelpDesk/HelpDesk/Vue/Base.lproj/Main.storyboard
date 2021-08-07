@@ -436,7 +436,7 @@
         <!--Lieux-->
         <scene sceneID="un0-hR-5aF">
             <objects>
-                <viewController id="njR-CR-8eZ" sceneMemberID="viewController">
+                <viewController id="njR-CR-8eZ" customClass="AddAddressListViewController" customModule="HelpDesk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CmW-aY-BSQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -445,7 +445,7 @@
                                 <rect key="frame" x="0.0" y="170" width="414" height="643"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="OFZ-l5-tyi">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="addressListLineCell" rowHeight="50" id="OFZ-l5-tyi" customClass="AddressListLineCell" customModule="HelpDesk" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OFZ-l5-tyi" id="35H-uf-0Sw">
@@ -465,8 +465,15 @@
                                                 <constraint firstItem="W3N-hH-eoa" firstAttribute="top" secondItem="35H-uf-0Sw" secondAttribute="topMargin" id="xlO-Qk-HQK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="placeName" destination="W3N-hH-eoa" id="jvN-BM-dQp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="njR-CR-8eZ" id="GrA-0A-c7z"/>
+                                    <outlet property="delegate" destination="njR-CR-8eZ" id="YLH-6X-7sT"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJF-mF-Tdq">
                                 <rect key="frame" x="214" y="110" width="200" height="40"/>
@@ -500,6 +507,10 @@
                             <color key="tintColor" red="0.89220094679999995" green="0.022717375309999999" blue="0.1797240973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addPlaceButton" destination="ZJF-mF-Tdq" id="Q2t-lc-3Hw"/>
+                        <outlet property="tableView" destination="vrP-VV-SFa" id="Km8-ML-jIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxK-u6-AAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1163,7 +1174,7 @@
         <!--Categorie-->
         <scene sceneID="TcT-D6-uzv">
             <objects>
-                <viewController id="sF7-br-2EE" sceneMemberID="viewController">
+                <viewController id="sF7-br-2EE" customClass="AddCategorieListViewController" customModule="HelpDesk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAC-VJ-G1z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1172,24 +1183,38 @@
                                 <rect key="frame" x="0.0" y="155" width="414" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="xdH-iA-zjD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categorieListLineCell" rowHeight="50" id="xdH-iA-zjD" customClass="CategorieListLineCell" customModule="HelpDesk" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xdH-iA-zjD" id="YTj-M9-Ot6">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xdH-iA-zjD" id="YTj-M9-Ot6" customClass="CategorieListLineCell">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom de la categorie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKR-lY-faQ">
-                                                    <rect key="frame" x="20" y="11" width="153" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKR-lY-faQ">
+                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="XDA-qc-wZT"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DKR-lY-faQ" firstAttribute="leading" secondItem="YTj-M9-Ot6" secondAttribute="leadingMargin" id="YMZ-Uc-vLK"/>
+                                                <constraint firstItem="DKR-lY-faQ" firstAttribute="trailing" secondItem="YTj-M9-Ot6" secondAttribute="trailingMargin" id="aCF-aB-01G"/>
+                                                <constraint firstItem="DKR-lY-faQ" firstAttribute="top" secondItem="YTj-M9-Ot6" secondAttribute="topMargin" id="mvB-a4-Baa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categorieName" destination="DKR-lY-faQ" id="Tji-iM-Aww"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sF7-br-2EE" id="T9o-cS-WGv"/>
+                                    <outlet property="delegate" destination="sF7-br-2EE" id="KeZ-2B-TU5"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh2-el-OYz">
                                 <rect key="frame" x="220" y="95" width="200" height="40"/>
@@ -1221,6 +1246,15 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Categorie" image="archivebox" catalog="system" id="g4e-RC-ePY"/>
+                    <navigationItem key="navigationItem" id="3Hf-cw-4LB">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="L1M-T8-ZMa">
+                            <color key="tintColor" red="0.89220094679999995" green="0.022717375309999999" blue="0.1797240973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addCategorieButton" destination="kh2-el-OYz" id="2ej-Fl-d2B"/>
+                        <outlet property="tableView" destination="OY0-k1-L6x" id="jWE-b8-llL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckj-xk-lWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1401,7 +1435,7 @@
         <segue reference="aIf-Y5-iZJ"/>
         <segue reference="hAN-px-OPv"/>
         <segue reference="RCi-EV-X5W"/>
-        <segue reference="3Cy-Rq-DhD"/>
+        <segue reference="Pjs-Y1-ThK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="archivebox" catalog="system" width="128" height="106"/>

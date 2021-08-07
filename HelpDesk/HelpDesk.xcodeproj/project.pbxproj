@@ -25,11 +25,24 @@
 		E61BA3D926BE8880002585FC /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3D826BE8880002585FC /* Categorie.swift */; };
 		E61BA3DB26BE9CDB002585FC /* AddAdresseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3DA26BE9CDA002585FC /* AddAdresseViewController.swift */; };
 		E61BA3DD26BEA1F7002585FC /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3DC26BEA1F7002585FC /* Address.swift */; };
+		E61BA3DF26BEB9E3002585FC /* AddCategorieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3DE26BEB9E3002585FC /* AddCategorieListViewController.swift */; };
+		E61BA3E126BEB9F9002585FC /* AddAddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3E026BEB9F9002585FC /* AddAddressListViewController.swift */; };
+		E61BA3E526BEBA8B002585FC /* AppCategorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3E426BEBA8B002585FC /* AppCategorie.swift */; };
+		E61BA3E726BEBA97002585FC /* AppRoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3E626BEBA97002585FC /* AppRoles.swift */; };
+		E61BA3E926BEBB19002585FC /* categorieFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3E826BEBB19002585FC /* categorieFirebase.swift */; };
+		E61BA3EB26BEBB28002585FC /* roleFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3EA26BEBB28002585FC /* roleFirebase.swift */; };
+		E61BA3ED26BEBBFB002585FC /* CategorieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3EC26BEBBFB002585FC /* CategorieServices.swift */; };
+		E61BA3EF26BEBC0B002585FC /* RolesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3EE26BEBC0B002585FC /* RolesServices.swift */; };
+		E61BA3F126BEC66A002585FC /* CategorieListLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3F026BEC66A002585FC /* CategorieListLineCell.swift */; };
+		E61BA3F326BECB0E002585FC /* AppAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3F226BECB0E002585FC /* AppAddress.swift */; };
+		E61BA3F526BECB9F002585FC /* AddressFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3F426BECB9F002585FC /* AddressFirebase.swift */; };
+		E61BA3F726BECBB3002585FC /* AddressServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3F626BECBB3002585FC /* AddressServices.swift */; };
 		E67C7BBB26B8429200274140 /* UserListLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C7BBA26B8429200274140 /* UserListLineCell.swift */; };
 		E699C11526B82061006EA1AD /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11426B82061006EA1AD /* AdminHomeViewController.swift */; };
 		E699C11726B83A18006EA1AD /* ButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11626B83A18006EA1AD /* ButtonConfig.swift */; };
 		E699C11926B83B81006EA1AD /* AddUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11826B83B81006EA1AD /* AddUserListViewController.swift */; };
 		E6CE4BD926B5DD04007EBA0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6CE4BD826B5DD04007EBA0E /* GoogleService-Info.plist */; };
+		E6E728CC26BECFB000A32C60 /* AddressListLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E728CB26BECFB000A32C60 /* AddressListLineCell.swift */; };
 		E6EB6B4226B58E9B00B46819 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB6B4126B58E9B00B46819 /* User.swift */; };
 		E6EB6B4826B5914300B46819 /* TechHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB6B4726B5914300B46819 /* TechHomePageViewController.swift */; };
 		E6EB6B4A26B5915C00B46819 /* EmployerHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB6B4926B5915C00B46819 /* EmployerHomePageViewController.swift */; };
@@ -83,12 +96,25 @@
 		E61BA3D826BE8880002585FC /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
 		E61BA3DA26BE9CDA002585FC /* AddAdresseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAdresseViewController.swift; sourceTree = "<group>"; };
 		E61BA3DC26BEA1F7002585FC /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		E61BA3DE26BEB9E3002585FC /* AddCategorieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategorieListViewController.swift; sourceTree = "<group>"; };
+		E61BA3E026BEB9F9002585FC /* AddAddressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressListViewController.swift; sourceTree = "<group>"; };
+		E61BA3E426BEBA8B002585FC /* AppCategorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCategorie.swift; sourceTree = "<group>"; };
+		E61BA3E626BEBA97002585FC /* AppRoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoles.swift; sourceTree = "<group>"; };
+		E61BA3E826BEBB19002585FC /* categorieFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categorieFirebase.swift; sourceTree = "<group>"; };
+		E61BA3EA26BEBB28002585FC /* roleFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roleFirebase.swift; sourceTree = "<group>"; };
+		E61BA3EC26BEBBFB002585FC /* CategorieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieServices.swift; sourceTree = "<group>"; };
+		E61BA3EE26BEBC0B002585FC /* RolesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesServices.swift; sourceTree = "<group>"; };
+		E61BA3F026BEC66A002585FC /* CategorieListLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieListLineCell.swift; sourceTree = "<group>"; };
+		E61BA3F226BECB0E002585FC /* AppAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAddress.swift; sourceTree = "<group>"; };
+		E61BA3F426BECB9F002585FC /* AddressFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFirebase.swift; sourceTree = "<group>"; };
+		E61BA3F626BECBB3002585FC /* AddressServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressServices.swift; sourceTree = "<group>"; };
 		E62EF480612BFED74CF3ADAB /* Pods_HelpDesk_HelpDeskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpDesk_HelpDeskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67C7BBA26B8429200274140 /* UserListLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListLineCell.swift; sourceTree = "<group>"; };
 		E699C11426B82061006EA1AD /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
 		E699C11626B83A18006EA1AD /* ButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfig.swift; sourceTree = "<group>"; };
 		E699C11826B83B81006EA1AD /* AddUserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserListViewController.swift; sourceTree = "<group>"; };
 		E6CE4BD826B5DD04007EBA0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6E728CB26BECFB000A32C60 /* AddressListLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListLineCell.swift; sourceTree = "<group>"; };
 		E6EB6B4126B58E9B00B46819 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; tabWidth = 1; };
 		E6EB6B4726B5914300B46819 /* TechHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechHomePageViewController.swift; sourceTree = "<group>"; };
 		E6EB6B4926B5915C00B46819 /* EmployerHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerHomePageViewController.swift; sourceTree = "<group>"; };
@@ -207,12 +233,14 @@
 		E604FFA426B43E2700072D66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E699C11626B83A18006EA1AD /* ButtonConfig.swift */,
 				E6EB6B4126B58E9B00B46819 /* User.swift */,
 				E61BA3CF26BD9B04002585FC /* Utilisateur */,
-				E6F281D026B5B208003C2610 /* Roles.swift */,
-				E699C11626B83A18006EA1AD /* ButtonConfig.swift */,
 				E61BA3D826BE8880002585FC /* Categorie.swift */,
+				E6F281D026B5B208003C2610 /* Roles.swift */,
+				E61BA3E226BEB9FF002585FC /* Categorie - Roles */,
 				E61BA3DC26BEA1F7002585FC /* Address.swift */,
+				E61BA3E326BEBA3F002585FC /* Address */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +275,29 @@
 			path = Utilisateur;
 			sourceTree = "<group>";
 		};
+		E61BA3E226BEB9FF002585FC /* Categorie - Roles */ = {
+			isa = PBXGroup;
+			children = (
+				E61BA3E426BEBA8B002585FC /* AppCategorie.swift */,
+				E61BA3E826BEBB19002585FC /* categorieFirebase.swift */,
+				E61BA3EC26BEBBFB002585FC /* CategorieServices.swift */,
+				E61BA3E626BEBA97002585FC /* AppRoles.swift */,
+				E61BA3EA26BEBB28002585FC /* roleFirebase.swift */,
+				E61BA3EE26BEBC0B002585FC /* RolesServices.swift */,
+			);
+			path = "Categorie - Roles";
+			sourceTree = "<group>";
+		};
+		E61BA3E326BEBA3F002585FC /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				E61BA3F226BECB0E002585FC /* AppAddress.swift */,
+				E61BA3F426BECB9F002585FC /* AddressFirebase.swift */,
+				E61BA3F626BECBB3002585FC /* AddressServices.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
 		E699C11126B81FF7006EA1AD /* Technicien */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,11 +309,13 @@
 		E699C11226B82002006EA1AD /* Administrateur */ = {
 			isa = PBXGroup;
 			children = (
-				E6EB6B4B26B5A00600B46819 /* AddUsersViewController.swift */,
 				E699C11426B82061006EA1AD /* AdminHomeViewController.swift */,
+				E6EB6B4B26B5A00600B46819 /* AddUsersViewController.swift */,
 				E699C11826B83B81006EA1AD /* AddUserListViewController.swift */,
 				E61BA3D626BE866E002585FC /* AddCategoriesViewController.swift */,
+				E61BA3DE26BEB9E3002585FC /* AddCategorieListViewController.swift */,
 				E61BA3DA26BE9CDA002585FC /* AddAdresseViewController.swift */,
+				E61BA3E026BEB9F9002585FC /* AddAddressListViewController.swift */,
 			);
 			path = Administrateur;
 			sourceTree = "<group>";
@@ -279,6 +332,8 @@
 			isa = PBXGroup;
 			children = (
 				E67C7BBA26B8429200274140 /* UserListLineCell.swift */,
+				E61BA3F026BEC66A002585FC /* CategorieListLineCell.swift */,
+				E6E728CB26BECFB000A32C60 /* AddressListLineCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -524,23 +579,36 @@
 			files = (
 				E6EB6B4826B5914300B46819 /* TechHomePageViewController.swift in Sources */,
 				E604FF7226B43CF800072D66 /* AppDelegate.swift in Sources */,
+				E61BA3E126BEB9F9002585FC /* AddAddressListViewController.swift in Sources */,
 				E61BA3D926BE8880002585FC /* Categorie.swift in Sources */,
 				E6EB6B4226B58E9B00B46819 /* User.swift in Sources */,
+				E61BA3EF26BEBC0B002585FC /* RolesServices.swift in Sources */,
+				E61BA3ED26BEBBFB002585FC /* CategorieServices.swift in Sources */,
+				E61BA3F326BECB0E002585FC /* AppAddress.swift in Sources */,
 				E61BA3D326BD9B5F002585FC /* userFirebase.swift in Sources */,
+				E61BA3E926BEBB19002585FC /* categorieFirebase.swift in Sources */,
+				E61BA3EB26BEBB28002585FC /* roleFirebase.swift in Sources */,
 				E61BA3DD26BEA1F7002585FC /* Address.swift in Sources */,
 				E699C11926B83B81006EA1AD /* AddUserListViewController.swift in Sources */,
+				E61BA3F526BECB9F002585FC /* AddressFirebase.swift in Sources */,
 				E6EB6B4A26B5915C00B46819 /* EmployerHomePageViewController.swift in Sources */,
 				E61BA3D126BD9B1D002585FC /* utilisateur.swift in Sources */,
 				E6F281D126B5B208003C2610 /* Roles.swift in Sources */,
+				E61BA3DF26BEB9E3002585FC /* AddCategorieListViewController.swift in Sources */,
 				E604FFA826B483E600072D66 /* LoginPageViewController.swift in Sources */,
+				E61BA3F726BECBB3002585FC /* AddressServices.swift in Sources */,
+				E61BA3F126BEC66A002585FC /* CategorieListLineCell.swift in Sources */,
 				E699C11526B82061006EA1AD /* AdminHomeViewController.swift in Sources */,
 				E67C7BBB26B8429200274140 /* UserListLineCell.swift in Sources */,
+				E61BA3E526BEBA8B002585FC /* AppCategorie.swift in Sources */,
 				E61BA3D526BD9CE5002585FC /* UserService.swift in Sources */,
 				E604FF7426B43CF800072D66 /* SceneDelegate.swift in Sources */,
 				E6EB6B4C26B5A00600B46819 /* AddUsersViewController.swift in Sources */,
 				E61BA3D726BE866E002585FC /* AddCategoriesViewController.swift in Sources */,
 				E61BA3DB26BE9CDB002585FC /* AddAdresseViewController.swift in Sources */,
 				E699C11726B83A18006EA1AD /* ButtonConfig.swift in Sources */,
+				E6E728CC26BECFB000A32C60 /* AddressListLineCell.swift in Sources */,
+				E61BA3E726BEBA97002585FC /* AppRoles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

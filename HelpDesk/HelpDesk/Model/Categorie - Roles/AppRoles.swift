@@ -1,0 +1,13 @@
+//
+//  AppRoles.swift
+//  HelpDesk
+//
+//  Created by Farid Benjomaa on 07/08/2021.
+//
+
+import Foundation
+
+struct appRole {
+    let name: String?
+   
+}

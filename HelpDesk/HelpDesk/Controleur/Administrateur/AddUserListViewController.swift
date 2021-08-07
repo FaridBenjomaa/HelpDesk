@@ -12,7 +12,7 @@ class AddUserListViewController: UIViewController {
 
     //MARK: Properties
     var button = ButtonConfig()
-    let db = Firestore.firestore()
+  
   
     private var service: UserService?
        private var allusers = [appUser]() {
@@ -34,9 +34,8 @@ class AddUserListViewController: UIViewController {
     
     //MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
-    
-    
     @IBOutlet weak var addUserButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

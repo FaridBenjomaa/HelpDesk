@@ -17,10 +17,34 @@ class AddUsersViewController: UIViewController {
     var user = User()
     var role = Roles()
     var roleName : String!
+    private var service: UserService?
+       private var allRoles = [appRole]() {
+           didSet {
+               DispatchQueue.main.async {
+                   self.roles = self.allRoles
+               }
+           }
+       }
+    
+    var roles = [appRole]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.rolePickerView.reloadAllComponents()
+            }
+        }
+    }
+  
+    //MARK: Fonctions
+    func loadData() {
+        let service = RolesServices()
+        service.get(collectionID: "Role") { roles in
+                self.allRoles = roles
+            }
+        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadData()
         button.setUpWhiteButtons(button: valideButton)
         setupTextFieldManager()
     }
@@ -92,16 +116,16 @@ extension AddUsersViewController : UIPickerViewDataSource, UIPickerViewDelegate 
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return role.role.count
+        return roles.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let roleName = role.role[row]
+        let roleName = roles[row].name
     
         return roleName
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
-        roleName =  role.role[row]
+        roleName =  roles[row].name
         
     }
     
