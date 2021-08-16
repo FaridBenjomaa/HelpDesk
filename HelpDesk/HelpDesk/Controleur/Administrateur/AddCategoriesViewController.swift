@@ -17,7 +17,9 @@ class AddCategoriesViewController: UIViewController {
     //MARK: Outlets
     @IBOutlet weak var addCategorieTextField: UITextField!
     @IBOutlet weak var addCategorieValideButton: UIButton!
+    @IBOutlet weak var addCategorieAndContinue: UIButton!
     
+    @IBOutlet weak var addRoleAndContinue: UIButton!
     @IBOutlet weak var addRoleValideButton: UIButton!
     @IBOutlet weak var addRoleTextField: UITextField!
     
@@ -28,9 +30,20 @@ class AddCategoriesViewController: UIViewController {
         categorie.createCategorie(name: categorieName!)
        
     }
+    @IBAction func valideAddedCategorieAndClose(_ sender: Any) {
+        let categorieName = addCategorieTextField.text
+        categorie.createCategorie(name: categorieName!)
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func valideAddedRole(_ sender: Any) {
         let roleName = addRoleTextField.text
         role.createRole(name: roleName!)
+    }
+    
+    @IBAction func valideAddedRoleAndClose(_ sender: Any) {
+        let roleName = addRoleTextField.text
+        role.createRole(name: roleName!)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func dissmissButton(_ sender: Any) {
@@ -39,8 +52,10 @@ class AddCategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.setUpWhiteButtons(button: addRoleValideButton)
-        button.setUpWhiteButtons(button: addCategorieValideButton)
+        button.setUpWhiteButtons(button: addRoleAndContinue)
+        button.setUpRedButtons(button: addRoleValideButton)
+        button.setUpWhiteButtons(button: addCategorieAndContinue)
+        button.setUpRedButtons(button: addCategorieValideButton)
         setupTextFieldManager()
     }
     

@@ -37,6 +37,7 @@
 		E61BA3F326BECB0E002585FC /* AppAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3F226BECB0E002585FC /* AppAddress.swift */; };
 		E61BA3F526BECB9F002585FC /* AddressFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3F426BECB9F002585FC /* AddressFirebase.swift */; };
 		E61BA3F726BECBB3002585FC /* AddressServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BA3F626BECBB3002585FC /* AddressServices.swift */; };
+		E63BC11926CA9DEA007A3597 /* MakeRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63BC11826CA9DEA007A3597 /* MakeRequestViewController.swift */; };
 		E67C7BBB26B8429200274140 /* UserListLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C7BBA26B8429200274140 /* UserListLineCell.swift */; };
 		E699C11526B82061006EA1AD /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11426B82061006EA1AD /* AdminHomeViewController.swift */; };
 		E699C11726B83A18006EA1AD /* ButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E699C11626B83A18006EA1AD /* ButtonConfig.swift */; };
@@ -109,6 +110,7 @@
 		E61BA3F426BECB9F002585FC /* AddressFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFirebase.swift; sourceTree = "<group>"; };
 		E61BA3F626BECBB3002585FC /* AddressServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressServices.swift; sourceTree = "<group>"; };
 		E62EF480612BFED74CF3ADAB /* Pods_HelpDesk_HelpDeskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpDesk_HelpDeskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63BC11826CA9DEA007A3597 /* MakeRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeRequestViewController.swift; sourceTree = "<group>"; };
 		E67C7BBA26B8429200274140 /* UserListLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListLineCell.swift; sourceTree = "<group>"; };
 		E699C11426B82061006EA1AD /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
 		E699C11626B83A18006EA1AD /* ButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfig.swift; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				E6EB6B4926B5915C00B46819 /* EmployerHomePageViewController.swift */,
+				E63BC11826CA9DEA007A3597 /* MakeRequestViewController.swift */,
 			);
 			path = Utilisateur;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				E6EB6B4226B58E9B00B46819 /* User.swift in Sources */,
 				E61BA3EF26BEBC0B002585FC /* RolesServices.swift in Sources */,
 				E61BA3ED26BEBBFB002585FC /* CategorieServices.swift in Sources */,
+				E63BC11926CA9DEA007A3597 /* MakeRequestViewController.swift in Sources */,
 				E61BA3F326BECB0E002585FC /* AppAddress.swift in Sources */,
 				E61BA3D326BD9B5F002585FC /* userFirebase.swift in Sources */,
 				E61BA3E926BEBB19002585FC /* categorieFirebase.swift in Sources */,
@@ -788,6 +792,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8M85YCYBZ;
 				INFOPLIST_FILE = HelpDesk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -808,6 +813,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8M85YCYBZ;
 				INFOPLIST_FILE = HelpDesk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

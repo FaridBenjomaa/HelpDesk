@@ -49,7 +49,7 @@ class  User  {
         ref.child("Users/\(userid)/role").setValue(role)
         
         let docRef = database.document("Users/\(username)")
-        docRef.setData(["UserName": username, "firstName": firstName, "lastName": lastName, "email": email, "role": role, "userId": userid])
+        docRef.setData(["UserName": username, "firstName": firstName, "lastName": lastName, "email": email, "role": role])
     }
     
 

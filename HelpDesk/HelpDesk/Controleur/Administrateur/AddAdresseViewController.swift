@@ -22,45 +22,31 @@ class AddAdresseViewController: UIViewController {
     @IBOutlet weak var zipCodeTextField: UITextField!
     @IBOutlet weak var cityNameTextField: UITextField!
     @IBOutlet weak var addAdressButton: UIButton!
+    @IBOutlet weak var addNewAddressButton: UIButton!
     
     //MARK: Actions
     @IBAction func addAddressTappedButton(_ sender: Any) {
-        if streetNameOptionelTextField.text != "" && streetNumberTextField.text != "" {
-            address.createAddress(name: nameTextField.text!,
-                                    streetNumber: streetNumberTextField.text!,
-                                    streetName: streetNameTextField.text!,
-                                    streetNameOptionel: streetNameOptionelTextField.text!,
-                                    zipCode: zipCodeTextField.text!,
-                                    cityName: cityNameTextField.text!)
-        }else if streetNameOptionelTextField.text != "" && streetNumberTextField.text == ""{
-            address.createAddressWhitoutStreetNumber(name: nameTextField.text!,
-                                                     streetName: streetNameTextField.text!,
-                                                     streetNameOptionel: streetNameOptionelTextField.text!,
-                                                     zipCode: zipCodeTextField.text!,
-                                                     cityName: cityNameTextField.text!)
-        }else if streetNameOptionelTextField.text == "" && streetNumberTextField.text != ""{
-            address.createAddressWithoutStreetNameOptionel(name: nameTextField.text!,
-                                                             streetNumber: streetNumberTextField.text!,
-                                                             streetName: streetNameTextField.text!,
-                                                             zipCode: zipCodeTextField.text!,
-                                                             cityName: cityNameTextField.text!)
-        }else if streetNameOptionelTextField.text == "" && streetNumberTextField.text == ""{
-            address.createAddressWithoutStreetNameOptionelandWhitoutStreetNumber(name: nameTextField.text!,
-                                                                                 streetName: streetNameTextField.text!,
-                                                                                 zipCode: zipCodeTextField.text!,
-                                                                                 cityName: cityNameTextField.text!)
-        }
+        createAddressToDataBase()
+        dismiss(animated: true, completion: nil)
     }
+    
+    
+    
+    @IBAction func addNewAdressTappedButton(_ sender: Any) {
+        createAddressToDataBase()
+        clearTextField()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.setUpWhiteButtons(button: addAdressButton)
+        button.setUpRedButtons(button: addAdressButton)
+        button.setUpWhiteButtons(button: addNewAddressButton)
         setupTextFieldManager()
 
     }
     
     //MARK: Privates Func
-
     @objc private func hideKeyboard() {
         nameTextField.resignFirstResponder()
         streetNumberTextField.resignFirstResponder()
@@ -80,6 +66,43 @@ class AddAdresseViewController: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         view.addGestureRecognizer(tapGesture)
+    }
+    
+    private func clearTextField(){
+        nameTextField.text = ""
+        streetNameTextField.text = ""
+        streetNumberTextField.text = ""
+        streetNameOptionelTextField.text = ""
+        zipCodeTextField.text = ""
+        cityNameTextField.text = ""
+    }
+    
+    fileprivate func createAddressToDataBase() {
+        if streetNameOptionelTextField.text != "" && streetNumberTextField.text != "" {
+            address.createAddress(name: nameTextField.text!,
+                                  streetNumber: streetNumberTextField.text!,
+                                  streetName: streetNameTextField.text!,
+                                  streetNameOptionel: streetNameOptionelTextField.text!,
+                                  zipCode: zipCodeTextField.text!,
+                                  cityName: cityNameTextField.text!)
+        }else if streetNameOptionelTextField.text != "" && streetNumberTextField.text == ""{
+            address.createAddressWhitoutStreetNumber(name: nameTextField.text!,
+                                                     streetName: streetNameTextField.text!,
+                                                     streetNameOptionel: streetNameOptionelTextField.text!,
+                                                     zipCode: zipCodeTextField.text!,
+                                                     cityName: cityNameTextField.text!)
+        }else if streetNameOptionelTextField.text == "" && streetNumberTextField.text != ""{
+            address.createAddressWithoutStreetNameOptionel(name: nameTextField.text!,
+                                                           streetNumber: streetNumberTextField.text!,
+                                                           streetName: streetNameTextField.text!,
+                                                           zipCode: zipCodeTextField.text!,
+                                                           cityName: cityNameTextField.text!)
+        }else if streetNameOptionelTextField.text == "" && streetNumberTextField.text == ""{
+            address.createAddressWithoutStreetNameOptionelandWhitoutStreetNumber(name: nameTextField.text!,
+                                                                                 streetName: streetNameTextField.text!,
+                                                                                 zipCode: zipCodeTextField.text!,
+                                                                                 cityName: cityNameTextField.text!)
+        }
     }
 
 }
